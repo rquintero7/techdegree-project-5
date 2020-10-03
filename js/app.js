@@ -1,4 +1,2 @@
-window.addEventListener('load', function () {
-    baguetteBox.run('.grid-layout');
-    const search = new Filter('search_box', 'data-caption');
-});
+baguetteBox.run('.gallery');
+const search = new Filter('search', 'data-caption');
