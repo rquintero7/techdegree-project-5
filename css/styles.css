@@ -1,14 +1,16 @@
 body{
   max-width: 960px;
   margin: auto;
+ 
 }
 
 .search-box {
   margin: 40px auto;
   text-align: center;
+  margin-top: 20px;
 }
 
-#search_box {
+#search {
   width: 30%;
   border-radius: 5px;
   padding: 5px 5px;
@@ -16,18 +18,16 @@ body{
 }
 
 
-
 .grid {
-  max-width: 960px;
-  display:grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  width: 90%;
+  max-width: 1070px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, minmax(200px, 1fr));
   grid-gap: 15px;
+ } 
 
-}
-
-figure {
-    width: 100%;
-    margin: 0;
+img {
+  max-width: 100%;
 }
