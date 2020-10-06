@@ -1,14 +1,14 @@
-const searchBar = document.getElementById("paintingSearchBar");
-let gallery = document.querySelectorAll(".gallery-container a");
+const searchBar = document.getElementById("SearchBar");
+let grid = document.querySelectorAll(".grid-container a");
 searchBar.addEventListener("keyup", (e) => {
     const searchTerm = e.target.value.toLowerCase();
     // console.log(searchBox.value);
-    for (let i = 0; i < gallery.length; i++) {
-        const searchInput = gallery[i].getAttribute("data-caption");
+    for (let i = 0; i < grid.length; i++) {
+        const searchInput = grid[i].getAttribute("data-caption");
         if (searchInput.toLowerCase().includes(searchTerm)) {
-            gallery[i].style.display = "";
+            grid[i].style.display = "";
         } else {
-            gallery[i].style.display = "none";
+            grid[i].style.display = "none";
         }
     }
 });
